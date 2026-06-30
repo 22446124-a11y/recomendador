@@ -1,0 +1,143 @@
+[
+  {
+    "nombre": "Qustodio",
+    "caracteristicas": ["Restricción De Pantalla", "Geolocalización", "Filtrado De Contenido Web", "Gestión De Tiempo De Pantalla", "Control Remoto", "Informes De Actividad", "Bloqueo De Apps", "Historial De Navegación"],
+    "ventajas": "Muy completa, interfaz amigable, buena reputación.",
+    "desventajas": "Versión gratuita limitada.",
+    "link": "https://www.qustodio.com/es/"
+  },
+  
+  {
+    "nombre": "FamiSafe",
+    "caracteristicas": ["Geolocalización", "Monitoreo De Redes Sociales", "Gestión De Tiempo De Pantalla", "Filtrado De Contenido Web", "Control Remoto"],
+    "ventajas": "Buena cobertura de funciones, interfaz moderna.",
+    "desventajas": "Algunas funciones requieren suscripción.",
+    "link": "https://famisafe.wondershare.com/"
+  },
+  {
+    "nombre": "Bark",
+    "caracteristicas": ["Monitoreo De Redes Sociales", "Supervisión De Llamadas Y Mensajes", "Filtrado De Contenido Web", "Informes De Actividad"],
+    "ventajas": "Especializada en monitoreo de redes sociales.",
+    "desventajas": "Puede ser invasiva si no se comunica con el menor.",
+    "link": "https://www.bark.us/"
+  },
+  {
+    "nombre": "Kaspersky Safe Kids",
+    "caracteristicas": ["Filtrado De Contenido Web", "Geolocalización", "Gestión De Tiempo De Pantalla", "Control Remoto"],
+    "ventajas": "Buena protección web, marca confiable.",
+    "desventajas": "Interfaz menos intuitiva.",
+    "link": "https://www.kaspersky.com/safe-kids"
+  },
+  {
+    "nombre": "Net Nanny",
+    "caracteristicas": ["Filtrado De Contenido Web", "Bloqueo De Apps", "Gestión De Tiempo De Pantalla"],
+    "ventajas": "Excelente filtrado de contenido.",
+    "desventajas": "Precio elevado.",
+    "link": "https://www.netnanny.com/"
+  },
+  {
+    "nombre": "Google Family Link",
+    "caracteristicas": ["Restricción De Pantalla", "Geolocalización", "Control Remoto"],
+    "ventajas": "Gratuita, fácil de usar, integración con Android.",
+    "desventajas": "Funciones limitadas.",
+    "link": "https://families.google.com/familylink/"
+  },
+  {
+    "nombre": "OurPact",
+    "caracteristicas": ["Gestión De Tiempo De Pantalla", "Control Remoto", "Geolocalización"],
+    "ventajas": "Buena gestión de horarios.",
+    "desventajas": "Algunas funciones requieren pago.",
+    "link": "https://www.ourpact.com/"
+  },
+  {
+    "nombre": "Kidslox",
+    "caracteristicas": ["Gestión De Tiempo De Pantalla", "Filtrado De Contenido Web", "Bloqueo De Apps"],
+    "ventajas": "Interfaz sencilla, buena para niños pequeños.",
+    "desventajas": "Limitado en monitoreo avanzado.",
+    "link": "https://kidslox.com/"
+  },
+  {
+    "nombre": "FamilyTime",
+    "caracteristicas": ["Geolocalización", "Gestión De Tiempo De Pantalla", "Control Remoto"],
+    "ventajas": "Buena para rastreo y horarios.",
+    "desventajas": "Interfaz algo compleja.",
+    "link": "https://familytime.io/"
+  },
+  {
+    "nombre": "Screen Time",
+    "caracteristicas": ["Gestión De Tiempo De Pantalla", "Informes De Actividad"],
+    "ventajas": "Ideal para controlar el tiempo de uso.",
+    "desventajas": "No incluye monitoreo de redes sociales.",
+    "link": "https://screentimelabs.com/"
+  },
+  {
+    "nombre": "Circle Home Plus",
+    "caracteristicas": ["Filtrado De Contenido Web", "Gestión De Tiempo De Pantalla"],
+    "ventajas": "Funciona a nivel de red doméstica.",
+    "desventajas": "Requiere hardware adicional.",
+    "link": "https://meetcircle.com/"
+  },
+  {
+    "nombre": "OpenDNS Family Shield",
+    "caracteristicas": ["Filtrado De Contenido Web"],
+    "ventajas": "Gratuito, fácil de configurar.",
+    "desventajas": "Solo funciona en red local.",
+    "link": "https://www.opendns.com/setupguide/"
+  },
+  {
+    "nombre": "Kurupira Web Filter",
+    "caracteristicas": ["Filtrado De Contenido Web", "Bloqueo De Apps"],
+    "ventajas": "Gratuito, buena opción para PC.",
+    "desventajas": "No compatible con móviles.",
+    "link": "https://www.kurupira.net/"
+  },
+  {
+    "nombre": "Covenant Eyes",
+    "caracteristicas": ["Filtrado De Contenido Web", "Informes De Actividad"],
+    "ventajas": "Enfocado en navegación segura.",
+    "desventajas": "No incluye geolocalización ni control remoto.",
+    "link": "https://www.covenanteyes.com/"
+  },
+  {
+    "nombre": "Boystown",
+    "caracteristicas": ["Filtrado De Contenido Web"],
+    "ventajas": "Enfocado en protección infantil.",
+    "desventajas": "Muy limitado en funciones.",
+    "link": "https://www.boystown.org/"
+  },
+  {
+    "nombre": "Safe Lagoon",
+    "caracteristicas": ["Geolocalización", "Filtrado De Contenido Web"],
+    "ventajas": "Buena opción para Android.",
+    "desventajas": "Menos funciones en iOS.",
+    "link": "https://safelagoon.com/"
+  },
+  {
+    "nombre": "Google Gmail for Kids",
+    "caracteristicas": ["Control Remoto", "Historial De Navegación"],
+    "ventajas": "Gestión básica de correo.",
+    "desventajas": "No incluye filtrado ni geolocalización.",
+    "link": "https://support.google.com/families/answer/7103338"
+  },
+  {
+    "nombre": "Msafely",
+    "caracteristicas": ["Monitoreo De Redes Sociales", "Supervisión De Llamadas Y Mensajes", "Historial De Navegación", "Control Remoto"],
+    "ventajas": "Monitoreo avanzado.",
+    "desventajas": "Muy invasiva, puede afectar la confianza.",
+    "link": "https://www.msafely.com/"
+  },
+  {
+    "nombre": "mSpy",
+    "caracteristicas": ["Monitoreo De Redes Sociales", "Supervisión De Llamadas Y Mensajes", "Historial De Navegación"],
+    "ventajas": "Alta capacidad de monitoreo.",
+    "desventajas": "Muy invasiva, requiere consentimiento legal.",
+    "link": "https://www.mspy.com/"
+  },
+  {
+    "nombre": "Norton Family",
+    "caracteristicas": ["Filtrado De Contenido Web", "Gestión De Tiempo De Pantalla", "Informes De Actividad"],
+    "ventajas": "Marca confiable, buena protección.",
+    "desventajas": "Algunas funciones limitadas en iOS.",
+    "link": "https://us.norton.com/family"
+  }
+]
