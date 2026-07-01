@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recomendador de Apps de Control Parental</title>
   <!-- Conexión al archivo externo de estilos -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Encabezado institucional -->
@@ -15,25 +15,28 @@
   </header>
 
   <!-- Formulario de encuesta -->
-  <form id="appForm">
-    <label for="edad">Edad del niño:</label>
-    <input type="number" id="edad" name="edad" required>
+  <section>
+    <form id="appForm">
+      <label for="edad">Edad del niño:</label>
+      <input type="number" id="edad" name="edad" required>
 
-    <h3>Selecciona las características deseadas:</h3>
-    <label><input type="checkbox" value="Geolocalización"> Geolocalización</label>
-    <label><input type="checkbox" value="Bloqueo De Apps"> Bloqueo De Apps</label>
-    <label><input type="checkbox" value="Informes De Actividad"> Informes De Actividad</label>
-    <label><input type="checkbox" value="Restricción De Pantalla"> Restricción De Pantalla</label>
-    <label><input type="checkbox" value="Monitoreo De Redes Sociales"> Monitoreo De Redes Sociales</label>
-    <label><input type="checkbox" value="Historial De Navegación"> Historial De Navegación</label>
-    <label><input type="checkbox" value="Filtrado De Contenido Web"> Filtrado De Contenido Web</label>
-    <label><input type="checkbox" value="Supervisión De Llamadas Y Mensajes"> Supervisión De Llamadas Y Mensajes</label>
-    <label><input type="checkbox" value="Gestión De Tiempo De Pantalla"> Gestión De Tiempo De Pantalla</label>
-    <label><input type="checkbox" value="Control Remoto"> Control Remoto</label>
+      <h3>Selecciona las características deseadas:</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox" value="Geolocalización"> Geolocalización</label>
+        <label><input type="checkbox" value="Bloqueo De Apps"> Bloqueo De Apps</label>
+        <label><input type="checkbox" value="Informes De Actividad"> Informes De Actividad</label>
+        <label><input type="checkbox" value="Restricción De Pantalla"> Restricción De Pantalla</label>
+        <label><input type="checkbox" value="Monitoreo De Redes Sociales"> Monitoreo De Redes Sociales</label>
+        <label><input type="checkbox" value="Historial De Navegación"> Historial De Navegación</label>
+        <label><input type="checkbox" value="Filtrado De Contenido Web"> Filtrado De Contenido Web</label>
+        <label><input type="checkbox" value="Supervisión De Llamadas Y Mensajes"> Supervisión De Llamadas Y Mensajes</label>
+        <label><input type="checkbox" value="Gestión De Tiempo De Pantalla"> Gestión De Tiempo De Pantalla</label>
+        <label><input type="checkbox" value="Control Remoto"> Control Remoto</label>
+      </div>
 
-    <br><br>
-    <button type="submit">Generar recomendación</button>
-  </form>
+      <button type="submit">Generar recomendación</button>
+    </form>
+  </section>
 
   <!-- Contenedor para mostrar la mejor recomendación -->
   <section id="recommendation"></section>
