@@ -1,61 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recomendador de Apps de Control Parental</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>Comparador de Apps</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>🛡️ Recomendador de Apps de Control Parental</h1>
-    <p>Selecciona las características que deseas y la edad del menor para recibir una recomendación personalizada.</p>
-  </header>
+  <h1>Comparador de Aplicaciones</h1>
+  <table id="tabla-apps">
+    <thead>
+      <tr>
+        <th>App</th>
+        <th>Restricción De Pantalla</th>
+        <th>Geolocalización</th>
+        <th>Monitoreo De Redes Sociales</th>
+        <th>Historial De Navegación</th>
+        <th>Bloqueo De Apps</th>
+        <th>Filtrado De Contenido Web</th>
+        <th>Supervisión De Llamadas Y Mensajes</th>
+        <th>Informes De Actividad</th>
+        <th>Gestión De Tiempo De Pantalla</th>
+        <th>Control Remoto</th>
+        <th>Coincidencias</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aquí se llenará dinámicamente con JS -->
+    </tbody>
+  </table>
 
-  <!-- 📋 Encuesta -->
-  <section id="survey">
-    <h2>📋 Encuesta</h2>
-    <form id="appForm">
-      <label>Edad del niño:
-        <input type="number" id="edad" name="edad" min="1" max="17" required />
-      </label>
-
-      <fieldset>
-        <legend>Selecciona las características deseadas:</legend>
-        <div class="checkbox-group">
-          <label><input type="checkbox" value="Restricción De Pantalla" /> Restricción de pantalla</label>
-          <label><input type="checkbox" value="Geolocalización" /> Geolocalización</label>
-          <label><input type="checkbox" value="Monitoreo De Redes Sociales" /> Monitoreo de redes sociales</label>
-          <label><input type="checkbox" value="Historial De Navegación" /> Historial de navegación</label>
-          <label><input type="checkbox" value="Bloqueo De Apps" /> Bloqueo de apps</label>
-          <label><input type="checkbox" value="Filtrado De Contenido Web" /> Filtrado de contenido web</label>
-          <label><input type="checkbox" value="Supervisión De Llamadas Y Mensajes" /> Supervisión de llamadas y mensajes</label>
-          <label><input type="checkbox" value="Informes De Actividad" /> Informes de actividad</label>
-          <label><input type="checkbox" value="Gestión De Tiempo De Pantalla" /> Gestión de tiempo de pantalla</label>
-          <label><input type="checkbox" value="Control Remoto" /> Control remoto</label>
-        </div>
-      </fieldset>
-
-      <button type="submit">🔍 Recomendar App</button>
-    </form>
-  </section>
-
-  <!-- 📊 Ranking -->
-  <section id="ranking">
-    <h2>📊 Ranking de Aplicaciones</h2>
-    <!-- Aquí se mostrará la mejor recomendación -->
-    <div id="recommendation"></div>
-    <!-- Aquí se mostrará el Top 3 y luego el botón "Ver más" -->
-    <div id="rankingTable"></div>
-  </section>
-
-  
-
-  <footer>
-    <p>Desarrollado por Samantha Espinosa Mendoza | Proyecto de prevención de ciberdelitos infantiles</p>
-  </footer>
-
-  <!-- Conexión al JS -->
   <script src="script1.js"></script>
 </body>
 </html>
