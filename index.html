@@ -16,31 +16,45 @@
     th {
       background-color: #f4f4f4;
     }
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <h1>Comparador de Aplicaciones</h1>
-  <table id="tabla-apps">
-    <thead>
-      <tr>
-        <th>App</th>
-        <th>Restricción De Pantalla</th>
-        <th>Geolocalización</th>
-        <th>Monitoreo De Redes Sociales</th>
-        <th>Historial De Navegación</th>
-        <th>Bloqueo De Apps</th>
-        <th>Filtrado De Contenido Web</th>
-        <th>Supervisión De Llamadas Y Mensajes</th>
-        <th>Informes De Actividad</th>
-        <th>Gestión De Tiempo De Pantalla</th>
-        <th>Control Remoto</th>
-        <th>Coincidencias</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Aquí se llenará dinámicamente con JS -->
-    </tbody>
-  </table>
+
+  <!-- Formulario para encuesta -->
+  <form id="appForm">
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" required>
+
+    <h3>Selecciona características:</h3>
+    <label><input type="checkbox" value="Geolocalización"> Geolocalización</label>
+    <label><input type="checkbox" value="Bloqueo De Apps"> Bloqueo De Apps</label>
+    <label><input type="checkbox" value="Informes De Actividad"> Informes De Actividad</label>
+    <label><input type="checkbox" value="Restricción De Pantalla"> Restricción De Pantalla</label>
+    <label><input type="checkbox" value="Monitoreo De Redes Sociales"> Monitoreo De Redes Sociales</label>
+    <label><input type="checkbox" value="Historial De Navegación"> Historial De Navegación</label>
+    <label><input type="checkbox" value="Filtrado De Contenido Web"> Filtrado De Contenido Web</label>
+    <label><input type="checkbox" value="Supervisión De Llamadas Y Mensajes"> Supervisión De Llamadas Y Mensajes</label>
+    <label><input type="checkbox" value="Gestión De Tiempo De Pantalla"> Gestión De Tiempo De Pantalla</label>
+    <label><input type="checkbox" value="Control Remoto"> Control Remoto</label>
+
+    <br><br>
+    <button type="submit">Generar recomendación</button>
+  </form>
+
+  <!-- Contenedor para mostrar la mejor recomendación -->
+  <div id="recommendation"></div>
+
+  <!-- Contenedor para mostrar ranking de apps -->
+  <div id="rankingTable"></div>
+
+  <!-- Contenedor para bitácora -->
+  <div id="bitacoraLogs"></div>
 
   <script src="script1.js"></script>
 </body>
