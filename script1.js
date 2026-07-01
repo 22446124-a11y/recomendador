@@ -1,12 +1,9 @@
-
-
-// 🔄 Carga apps directamente desde apps.json (sin sobrescribir con backend)
+// 🔄 Carga apps directamente desde apps.json
 async function actualizarAppsConIA() {
   const response = await fetch("/apps.json");
   const appsOriginales = await response.json();
-  return appsOriginales; // usamos las características tal cual
+  return appsOriginales;
 }
-
 
 // 🧠 Genera el ranking de apps (Top 3 + botón Ver más)
 function generarRanking(apps, selectedFeatures) {
@@ -29,7 +26,7 @@ function generarRanking(apps, selectedFeatures) {
   // Ordenar por coincidencias
   appsConCoincidencias.sort((a, b) => b.coincidencias - a.coincidencias);
 
-  // Función para construir tabla con todas las columnas
+  // Función para construir tabla mostrando SOLO coincidencias
   function construirTabla(lista, titulo) {
     let html = `<h3>${titulo}</h3><table><thead><tr><th>App</th>`;
     todasLasCaracteristicas.forEach(carac => {
@@ -39,10 +36,15 @@ function generarRanking(apps, selectedFeatures) {
 
     lista.forEach(app => {
       html += `<tr><td>${app.nombre}</td>`;
+      let coincidencias = 0;
+
       todasLasCaracteristicas.forEach(carac => {
-        html += `<td>${app.caracteristicas.includes(carac) ? "✅" : ""}</td>`;
+        const coincide = selectedFeatures.includes(carac) && app.caracteristicas.includes(carac);
+        if (coincide) coincidencias++;
+        html += `<td>${coincide ? "✅" : ""}</td>`;
       });
-      html += `<td>${app.coincidencias}</td>`;
+
+      html += `<td>${coincidencias}</td>`;
       html += `<td><a href="${app.link}" target="_blank">Descargar</a></td></tr>`;
     });
 
@@ -60,7 +62,7 @@ function generarRanking(apps, selectedFeatures) {
   boton.onclick = () => {
     const resto = appsConCoincidencias.slice(3);
     tableContainer.innerHTML += construirTabla(resto, "📋 Otras recomendaciones");
-    boton.remove(); // quitar el botón
+    boton.remove();
   };
   tableContainer.appendChild(boton);
 }
@@ -73,7 +75,7 @@ document.getElementById("appForm").addEventListener("submit", async function (e)
   const selectedFeatures = Array.from(document.querySelectorAll("input[type='checkbox']:checked"))
     .map(cb => cb.value);
 
-  const apps = await actualizarAppsConIA(); // 🔄 Carga y actualiza con IA
+  const apps = await actualizarAppsConIA();
 
   let bestMatch = null;
   let maxScore = -1;
@@ -108,6 +110,7 @@ function actualizarDatosDiarios() {
   console.log("📅 Datos actualizados automáticamente al iniciar el servidor");
 }
 actualizarDatosDiarios();
+
 // 📖 Mostrar bitácora de actualizaciones
 async function mostrarBitacora() {
   const response = await fetch("/bitacora");
@@ -119,3 +122,5 @@ async function mostrarBitacora() {
 
 // Llamar al cargar la página
 mostrarBitacora();
+
+
